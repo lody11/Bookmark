@@ -87,7 +87,7 @@ function deleteName(index) {
 
 var nameRegex = document.getElementById('bookmarkName')
 nameRegex.addEventListener('input', function () {
-  var regex = /^[a-z0-9_-]{3,15}$/;
+  var regex = /^[A-Za-z0-9_-]{3,15}$/;
   var myStr = nameRegex.value;
 
   if (regex.test(myStr) == true) {
